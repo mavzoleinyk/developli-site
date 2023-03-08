@@ -24,21 +24,72 @@
 					<img src="img/logo.svg" alt="">
 				</a>
 				<div class="header__block flex">
-					<ul class="header__menu flex">
-						<li>
-							<a href="#">Employers</a>
+					<ul class="menu flex">
+						<li class="menu__item has-child">
+							<a href="#" class="menu__link">Employers</a>
+							<ul class="submenu">
+								<li>
+									<a href="#">For Students</a>
+								</li>
+								<li>
+									<a href="#">Careers</a>
+								</li>
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Brand Ambassadors</a>
+								</li>
+								<li>
+									<a href="#">Resources</a>
+								</li>
+							</ul>
 						</li>
-						<li>
-							<a href="#">Candidates</a>
+						<li class="menu__item has-child">
+							<a href="#" class="menu__link">Candidates</a>
+							<ul class="submenu">
+								<li>
+									<a href="#">For Students</a>
+								</li>
+								<li>
+									<a href="#">Careers</a>
+								</li>
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Brand Ambassadors</a>
+								</li>
+								<li>
+									<a href="#">Resources</a>
+								</li>
+							</ul>
 						</li>
-						<li>
-							<a href="#">Company</a>
+						<li class="menu__item has-child">
+							<a href="#" class="menu__link">Company</a>
+							<ul class="submenu">
+								<li>
+									<a href="#">For Students</a>
+								</li>
+								<li>
+									<a href="#">Careers</a>
+								</li>
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Brand Ambassadors</a>
+								</li>
+								<li>
+									<a href="#">Resources</a>
+								</li>
+							</ul>
 						</li>
-						<li>
-							<a href="#">Blog</a>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Blog</a>
 						</li>
 					</ul>
-					<a href="#modal-login" class="header__login modal-link">
+					<a href="#" class="header__login">
 						<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M10 0C4.5 0 0 4.5 0 10C0 12.6 1 15.1 2.9 17L3 17.1C4.2 18.2 5.6 19.1 7.1 19.6C8.1 19.9 9.1 20 10.1 20C11.1 20 12.1 19.8 13.1 19.6C14.6 19.1 16 18.3 17.2 17.2L17.3 17.1C19.1 15.2 20.2 12.7 20.2 10.1C20 4.5 15.5 0 10 0ZM10 2C14.4 2 18 5.6 18 10C18 11.7 17.5 13.3 16.5 14.6C15.7 13.3 14.5 12.4 13.1 11.8C13.8 11 14.3 10 14.3 8.8C14.3 6.4 12.4 4.5 10 4.5C7.6 4.5 5.7 6.4 5.7 8.8C5.7 10 6.2 11 6.9 11.8C5.5 12.4 4.4 13.4 3.5 14.6C2.5 13.3 2 11.6 2 10C2 5.6 5.6 2 10 2Z"/>
 						</svg>
@@ -73,9 +124,6 @@
 				<div class="search__btn">
 					<a href="#" class="btn btn_green">Search</a>
 				</div>
-				<div class="search__filter-link">
-					<a href="#">Filters</a>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -83,226 +131,237 @@
 	<section class="content-wrapper pt-small pb-big">
 		<div class="container">
 			<div class="content flex">
-				<div class="filter">
-					<div class="filter__item">
-						<div class="filter__item-title">
-							Experience Level
+				<div class="filter-wrapper">
+					<div class="filter__block">
+						<div class="filter__blackout"></div>
+						<div class="filter">
+							<div class="filter__top">
+								<div class="filter__title">
+									Filters
+								</div>
+								<div class="filter__close"></div>
+							</div>
+							<div class="filter__item">
+								<div class="filter__item-title active">
+									Experience Level
+								</div>
+								<div class="filter__item-block" style="display: block">
+									<div class="checkbox">
+										<input type="checkbox" name="level" id="level-1">
+										<label for="level-1" class="flex">
+											<span>0-2 years</span>
+											<small>28</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="level" id="level-2">
+										<label for="level-2" class="flex">
+											<span>3-5 years</span>
+											<small>713</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="level" id="level-3">
+										<label for="level-3" class="flex">
+											<span>6-9 years</span>
+											<small>188</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="level" id="level-4">
+										<label for="level-4" class="flex">
+											<span>10+ years</span>
+											<small>188</small>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div class="filter__item-title active">
+									Category
+								</div>
+								<div class="filter__item-block" style="display: block;">
+									<div class="checkbox">
+										<input type="checkbox" name="category" id="category-1">
+										<label for="category-1" class="flex">
+											<span>Category 1</span>
+											<small>28</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="category" id="category-2">
+										<label for="category-2" class="flex">
+											<span>Category 2</span>
+											<small>713</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="category" id="category-3">
+										<label for="category-3" class="flex">
+											<span>Category 3</span>
+											<small>188</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="category" id="category-4">
+										<label for="category-4" class="flex">
+											<span>Category 4</span>
+											<small>188</small>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div class="filter__item-title">
+									Type of employment
+								</div>
+								<div class="filter__item-block">
+									<div class="checkbox">
+										<input type="checkbox" name="type" id="type-1">
+										<label for="type-1" class="flex">
+											<span>Fulltime</span>
+											<small>35</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="type" id="type-2">
+										<label for="type-2" class="flex">
+											<span>Part-Time</span>
+											<small>732</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="type" id="type-3">
+										<label for="type-3" class="flex">
+											<span>Remote</span>
+											<small>35</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="type" id="type-4">
+										<label for="type-4" class="flex">
+											<span>Internship/Trainee</span>
+											<small>72</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="type" id="type-5">
+										<label for="type-5" class="flex">
+											<span>Hourly</span>
+											<small>482</small>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div class="filter__item-title">
+									Salary Range
+								</div>
+								<div class="filter__item-block">
+									<div class="checkbox">
+										<input type="checkbox" name="range" id="range-1">
+										<label for="range-1" class="flex">
+											<span>Category 1</span>
+											<small>28</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="range" id="range-2">
+										<label for="range-2" class="flex">
+											<span>Category 2</span>
+											<small>713</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="range" id="range-3">
+										<label for="range-3" class="flex">
+											<span>Category 3</span>
+											<small>188</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="range" id="range-4">
+										<label for="range-4" class="flex">
+											<span>Category 4</span>
+											<small>188</small>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div class="filter__item-title">
+									Location
+								</div>
+								<div class="filter__item-block">
+									<div class="checkbox">
+										<input type="checkbox" name="location" id="location-1">
+										<label for="location-1" class="flex">
+											<span>Saudi Arabia</span>
+											<small>345</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="location" id="location-2">
+										<label for="location-2" class="flex">
+											<span>United States</span>
+											<small>749</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="location" id="location-3">
+										<label for="location-3" class="flex">
+											<span>Germany</span>
+											<small>1245</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="location" id="location-4">
+										<label for="location-4" class="flex">
+											<span>Australia</span>
+											<small>83</small>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div class="filter__item-title">
+									Time Zones
+								</div>
+								<div class="filter__item-block">
+									<div class="checkbox">
+										<input type="checkbox" name="zone" id="zone-1">
+										<label for="zone-1" class="flex">
+											<span>Zone 1</span>
+											<small>345</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="zone" id="zone-2">
+										<label for="zone-2" class="flex">
+											<span>Zone 2</span>
+											<small>749</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="zone" id="zone-3">
+										<label for="zone-3" class="flex">
+											<span>Zone 3</span>
+											<small>1245</small>
+										</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" name="zone" id="zone-4">
+										<label for="zone-4" class="flex">
+											<span>Zone 4</span>
+											<small>83</small>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__btn">
+								<a href="#" class="btn btn_green">Show (125)</a>
+							</div>
 						</div>
-						<div class="filter__item-block">
-							<div class="checkbox">
-								<input type="checkbox" name="level" id="level-1">
-								<label for="level-1" class="flex">
-									<span>0-2 years</span>
-									<small>28</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="level" id="level-2">
-								<label for="level-2" class="flex">
-									<span>3-5 years</span>
-									<small>713</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="level" id="level-3">
-								<label for="level-3" class="flex">
-									<span>6-9 years</span>
-									<small>188</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="level" id="level-4">
-								<label for="level-4" class="flex">
-									<span>10+ years</span>
-									<small>188</small>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="filter__item">
-						<div class="filter__item-title">
-							Category
-						</div>
-						<div class="filter__item-block">
-							<div class="checkbox">
-								<input type="checkbox" name="category" id="category-1">
-								<label for="category-1" class="flex">
-									<span>Category 1</span>
-									<small>28</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="category" id="category-2">
-								<label for="category-2" class="flex">
-									<span>Category 2</span>
-									<small>713</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="category" id="category-3">
-								<label for="category-3" class="flex">
-									<span>Category 3</span>
-									<small>188</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="category" id="category-4">
-								<label for="category-4" class="flex">
-									<span>Category 4</span>
-									<small>188</small>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="filter__item">
-						<div class="filter__item-title">
-							Type of employment
-						</div>
-						<div class="filter__item-block">
-							<div class="checkbox">
-								<input type="checkbox" name="type" id="type-1">
-								<label for="type-1" class="flex">
-									<span>Fulltime</span>
-									<small>35</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="type" id="type-2">
-								<label for="type-2" class="flex">
-									<span>Part-Time</span>
-									<small>732</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="type" id="type-3">
-								<label for="type-3" class="flex">
-									<span>Remote</span>
-									<small>35</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="type" id="type-4">
-								<label for="type-4" class="flex">
-									<span>Internship/Trainee</span>
-									<small>72</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="type" id="type-5">
-								<label for="type-5" class="flex">
-									<span>Hourly</span>
-									<small>482</small>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="filter__item">
-						<div class="filter__item-title">
-							Salary Range
-						</div>
-						<div class="filter__item-block">
-							<div class="checkbox">
-								<input type="checkbox" name="range" id="range-1">
-								<label for="range-1" class="flex">
-									<span>Category 1</span>
-									<small>28</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="range" id="range-2">
-								<label for="range-2" class="flex">
-									<span>Category 2</span>
-									<small>713</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="range" id="range-3">
-								<label for="range-3" class="flex">
-									<span>Category 3</span>
-									<small>188</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="range" id="range-4">
-								<label for="range-4" class="flex">
-									<span>Category 4</span>
-									<small>188</small>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="filter__item">
-						<div class="filter__item-title">
-							Location
-						</div>
-						<div class="filter__item-block">
-							<div class="checkbox">
-								<input type="checkbox" name="location" id="location-1">
-								<label for="location-1" class="flex">
-									<span>Saudi Arabia</span>
-									<small>345</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="location" id="location-2">
-								<label for="location-2" class="flex">
-									<span>United States</span>
-									<small>749</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="location" id="location-3">
-								<label for="location-3" class="flex">
-									<span>Germany</span>
-									<small>1245</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="location" id="location-4">
-								<label for="location-4" class="flex">
-									<span>Australia</span>
-									<small>83</small>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="filter__item">
-						<div class="filter__item-title">
-							Time Zones
-						</div>
-						<div class="filter__item-block">
-							<div class="checkbox">
-								<input type="checkbox" name="zone" id="zone-1">
-								<label for="zone-1" class="flex">
-									<span>Zone 1</span>
-									<small>345</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="zone" id="zone-2">
-								<label for="zone-2" class="flex">
-									<span>Zone 2</span>
-									<small>749</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="zone" id="zone-3">
-								<label for="zone-3" class="flex">
-									<span>Zone 3</span>
-									<small>1245</small>
-								</label>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="zone" id="zone-4">
-								<label for="zone-4" class="flex">
-									<span>Zone 4</span>
-									<small>83</small>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="filter__btn">
-						<a href="#" class="btn btn_green">show (125)</a>
 					</div>
 				</div>
 				<div class="content__block">
@@ -322,6 +381,7 @@
 								<option>New</option>
 							</select>
 						</div>
+						<a href="#" class="filter-mobile-link"></a>
 					</div>
 					<div class="filter__tags flex">
 						<div class="filter__tag flex">
@@ -367,9 +427,9 @@
 							<div class="candidate__time">
 								2y 6m
 							</div>
-							<div class="candidate__title">
+							<a href="#modal-candidate" class="candidate__title modal-link">
 								Product UX Designer
-							</div>
+							</a>
 							<div class="candidate__location">
 								California, USA
 							</div>
@@ -393,7 +453,7 @@
 								</svg>
 								<span>Send message</span>
 							</a>
-							<a href="#modal-vacancy" class="btn btn_grey modal-link">
+							<a href="#" class="btn btn_grey">
 								Detail Information
 							</a>
 						</div>
@@ -426,9 +486,9 @@
 							<div class="candidate__time">
 								2y 6m
 							</div>
-							<div class="candidate__title">
+							<a href="#modal-candidate" class="candidate__title modal-link">
 								Product UX Designer
-							</div>
+							</a>
 							<div class="candidate__location">
 								California, USA
 							</div>
@@ -452,7 +512,7 @@
 								</svg>
 								<span>Send message</span>
 							</a>
-							<a href="#modal-vacancy" class="btn btn_grey modal-link">
+							<a href="#" class="btn btn_grey">
 								Detail Information
 							</a>
 						</div>
@@ -485,9 +545,9 @@
 							<div class="candidate__time">
 								2y 6m
 							</div>
-							<div class="candidate__title">
+							<a href="#modal-candidate" class="candidate__title modal-link">
 								Product UX Designer
-							</div>
+							</a>
 							<div class="candidate__location">
 								California, USA
 							</div>
@@ -511,7 +571,7 @@
 								</svg>
 								<span>Send message</span>
 							</a>
-							<a href="#modal-vacancy" class="btn btn_grey modal-link">
+							<a href="#" class="btn btn_grey">
 								Detail Information
 							</a>
 						</div>
@@ -544,9 +604,9 @@
 							<div class="candidate__time">
 								2y 6m
 							</div>
-							<div class="candidate__title">
+							<a href="#modal-candidate" class="candidate__title modal-link">
 								Product UX Designer
-							</div>
+							</a>
 							<div class="candidate__location">
 								California, USA
 							</div>
@@ -570,7 +630,7 @@
 								</svg>
 								<span>Send message</span>
 							</a>
-							<a href="#modal-vacancy" class="btn btn_grey modal-link">
+							<a href="#" class="btn btn_grey">
 								Detail Information
 							</a>
 						</div>
@@ -734,6 +794,174 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal-wrapper" id="modal-candidate">
+		<div class="modal__block flex">
+			<div class="modal__blackout"></div>
+			<div class="modal modal_vacancy flex">
+				<div class="modal__top flex">
+					<div class="modal__top-title">
+						Candidate details
+					</div>
+					<div class="modal__close"></div>
+				</div>
+				<div class="user flex">
+					<div class="user__avatar">
+						<img src="img/avatar.png" alt="">
+					</div>
+					<div class="user__info flex">
+						<div class="user__name">
+							Mawiyah Sawaya
+						</div>
+						<div class="user__position">
+							Java Engeneer
+						</div>
+						<div class="user__location">
+							California, USA
+						</div>
+					</div>
+					<a href="#" class="user__btn flex">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.0599 4.65327C13.4933 4.0266 12.5466 3.71327 11.1733 3.71327H11.0133V3.6866C11.0133 2.5666 11.0133 1.17993 8.50661 1.17993H7.49328C4.98661 1.17993 4.98661 2.57327 4.98661 3.6866V3.71993H4.82661C3.44661 3.71993 2.50661 4.03326 1.93994 4.65993C1.27994 5.39326 1.29994 6.37993 1.36661 7.05326L1.37328 7.09993L1.4174 7.56321C1.43166 7.71299 1.51241 7.84843 1.63857 7.93041C1.79893 8.03461 2.02015 8.1756 2.15994 8.25327C2.25328 8.31327 2.35328 8.3666 2.45328 8.41993C3.59328 9.0466 4.84661 9.4666 6.11994 9.67327C6.17994 10.2999 6.45328 11.0333 7.91328 11.0333C9.37328 11.0333 9.65994 10.3066 9.70661 9.65993C11.0666 9.43993 12.3799 8.9666 13.5666 8.27326C13.6066 8.25326 13.6333 8.23326 13.6666 8.21326C13.9104 8.07549 14.1625 7.90823 14.3964 7.74162C14.5099 7.66075 14.582 7.53452 14.5974 7.39601L14.5999 7.37327L14.6333 7.05993C14.6399 7.01993 14.6399 6.9866 14.6466 6.93993C14.6999 6.2666 14.6866 5.3466 14.0599 4.65327ZM8.72661 9.21993C8.72661 9.9266 8.72661 10.0333 7.90661 10.0333C7.08661 10.0333 7.08661 9.9066 7.08661 9.2266V8.3866H8.72661V9.21993ZM5.93994 3.71327V3.6866C5.93994 2.55327 5.93994 2.13327 7.49328 2.13327H8.50661C10.0599 2.13327 10.0599 2.55993 10.0599 3.6866V3.71993H5.93994V3.71327Z" fill="white"/>
+							<path d="M13.6456 9.28343C14.0003 9.11751 14.4077 9.3984 14.3723 9.78839L14.1601 12.1266C14.0201 13.4599 13.4734 14.8199 10.5401 14.8199H5.46006C2.52672 14.8199 1.98006 13.4599 1.84006 12.1332L1.63935 9.9254C1.6043 9.53994 2.00224 9.25939 2.35586 9.41673C3.11559 9.75476 4.25608 10.2377 5.02976 10.4538C5.19335 10.4995 5.32589 10.618 5.40399 10.7688C5.82484 11.5816 6.68651 12.0132 7.91339 12.0132C9.12824 12.0132 9.99995 11.5649 10.4226 10.749C10.5008 10.5981 10.6338 10.4796 10.7975 10.4335C11.6223 10.2012 12.8451 9.6579 13.6456 9.28343Z" fill="white"/>
+						</svg>
+						<span>Available</span>
+					</a>
+				</div>
+				<div class="candidate__block">
+					<div class="candidate__block-title">
+						About
+					</div>
+					<p>
+						I’m UI Designer with 2 years experience. I have good communication skills and  can collaborate with team & developers. So if you interested with me, please feel free to hire me
+					</p>
+				</div>
+				<div class="candidate__block">
+					<div class="candidate__block-title">
+						Video CV
+					</div>
+					<video src="img/video.mp4" controls></video>
+				</div>
+				<div class="candidate__block">
+					<div class="candidate__block-title">
+						Experience
+					</div>
+					<div class="job flex">
+						<div class="job__icon">
+							<img src="img/job-icon-1.svg" alt="">
+						</div>
+						<div class="job__info">
+							<div class="job__title">
+								UI / UX Designer
+							</div>
+							<div class="job__description">
+								Ideologist Team - Freelance
+							</div>
+							<div class="job__time">
+								Jan 2022 - Present · 8 Mos
+							</div>
+						</div>
+					</div>
+					<div class="job flex">
+						<div class="job__icon">
+							<img src="img/job-icon-2.svg" alt="">
+						</div>
+						<div class="job__info">
+							<div class="job__title">
+								UI Designer
+							</div>
+							<div class="job__description">
+								Tigabatang - Fulltime
+							</div>
+							<div class="job__time">
+								Jan 2022 - Present · 8 Mos
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="candidate__block">
+					<div class="candidate__block-title">
+						Education
+					</div>
+					<div class="education flex">
+						<div class="education__icon">
+							<img src="img/education-icon-1.svg" alt="">
+						</div>
+						<div class="education__info">
+							<div class="education__title">
+								University
+							</div>
+							<div class="education__description">
+								Student - Software Engienering
+							</div>
+							<div class="education__time">
+								2018 - 2021 · 3 Yrs
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="candidate__block">
+					<div class="candidate__block-title">
+						Files
+					</div>
+					<div class="docs flex">
+						<a href="#" class="doc flex">
+							<span class="doc__icon flex">
+								<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.6667 2.49744H7.33333C4.125 2.49744 2.75 4.33077 2.75 7.08077V16.2474C2.75 18.9974 4.125 20.8308 7.33333 20.8308H14.6667C17.875 20.8308 19.25 18.9974 19.25 16.2474V7.08077C19.25 4.33077 17.875 2.49744 14.6667 2.49744ZM7.33333 11.8933H11C11.3758 11.8933 11.6875 12.2049 11.6875 12.5808C11.6875 12.9566 11.3758 13.2683 11 13.2683H7.33333C6.9575 13.2683 6.64583 12.9566 6.64583 12.5808C6.64583 12.2049 6.9575 11.8933 7.33333 11.8933ZM14.6667 16.9349H7.33333C6.9575 16.9349 6.64583 16.6233 6.64583 16.2474C6.64583 15.8716 6.9575 15.5599 7.33333 15.5599H14.6667C15.0425 15.5599 15.3542 15.8716 15.3542 16.2474C15.3542 16.6233 15.0425 16.9349 14.6667 16.9349ZM16.9583 9.14327H15.125C13.7317 9.14327 12.6042 8.01577 12.6042 6.62244V4.7891C12.6042 4.41327 12.9158 4.1016 13.2917 4.1016C13.6675 4.1016 13.9792 4.41327 13.9792 4.7891V6.62244C13.9792 7.25494 14.4925 7.76827 15.125 7.76827H16.9583C17.3342 7.76827 17.6458 8.07994 17.6458 8.45577C17.6458 8.8316 17.3342 9.14327 16.9583 9.14327Z" fill="#1B2124"/>
+								</svg>
+							</span>
+							<span class="doc__info">
+								<b>CV_</b>Sawaya.<b>pdf</b>
+								<br>
+								<small>3.2 Mb</small>
+							</span>
+							<span class="doc__icon-2">
+								<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 11.6641V17.6641L11 15.6641" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M9 17.6641L7 15.6641" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M22 10.6641V15.6641C22 20.6641 20 22.6641 15 22.6641H9C4 22.6641 2 20.6641 2 15.6641V9.66406C2 4.66406 4 2.66406 9 2.66406H14" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M22 10.6641H18C15 10.6641 14 9.66406 14 6.66406V2.66406L22 10.6641Z" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</span>
+						</a>
+						<a href="#" class="doc flex">
+							<span class="doc__icon flex">
+								<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.6667 2.49744H7.33333C4.125 2.49744 2.75 4.33077 2.75 7.08077V16.2474C2.75 18.9974 4.125 20.8308 7.33333 20.8308H14.6667C17.875 20.8308 19.25 18.9974 19.25 16.2474V7.08077C19.25 4.33077 17.875 2.49744 14.6667 2.49744ZM7.33333 11.8933H11C11.3758 11.8933 11.6875 12.2049 11.6875 12.5808C11.6875 12.9566 11.3758 13.2683 11 13.2683H7.33333C6.9575 13.2683 6.64583 12.9566 6.64583 12.5808C6.64583 12.2049 6.9575 11.8933 7.33333 11.8933ZM14.6667 16.9349H7.33333C6.9575 16.9349 6.64583 16.6233 6.64583 16.2474C6.64583 15.8716 6.9575 15.5599 7.33333 15.5599H14.6667C15.0425 15.5599 15.3542 15.8716 15.3542 16.2474C15.3542 16.6233 15.0425 16.9349 14.6667 16.9349ZM16.9583 9.14327H15.125C13.7317 9.14327 12.6042 8.01577 12.6042 6.62244V4.7891C12.6042 4.41327 12.9158 4.1016 13.2917 4.1016C13.6675 4.1016 13.9792 4.41327 13.9792 4.7891V6.62244C13.9792 7.25494 14.4925 7.76827 15.125 7.76827H16.9583C17.3342 7.76827 17.6458 8.07994 17.6458 8.45577C17.6458 8.8316 17.3342 9.14327 16.9583 9.14327Z" fill="#F59A74"/>
+								</svg>
+							</span>
+							<span class="doc__info">
+								<b>Project Pitch Deck.ppt</b>
+								<br>
+								<small>22.8 Mb</small>
+							</span>
+							<span class="doc__icon-2">
+								<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 11.6641V17.6641L11 15.6641" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M9 17.6641L7 15.6641" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M22 10.6641V15.6641C22 20.6641 20 22.6641 15 22.6641H9C4 22.6641 2 20.6641 2 15.6641V9.66406C2 4.66406 4 2.66406 9 2.66406H14" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M22 10.6641H18C15 10.6641 14 9.66406 14 6.66406V2.66406L22 10.6641Z" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="modal__bottom flex">
+					<div class="modal__btns flex">
+						<a href="#" class="btn btn_green flex">
+							<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.58317 15.8334H7.1665C3.83317 15.8334 2.1665 15.0001 2.1665 10.8334V6.66675C2.1665 3.33341 3.83317 1.66675 7.1665 1.66675H13.8332C17.1665 1.66675 18.8332 3.33341 18.8332 6.66675V10.8334C18.8332 14.1667 17.1665 15.8334 13.8332 15.8334H13.4165C13.1582 15.8334 12.9082 15.9584 12.7498 16.1667L11.4998 17.8334C10.9498 18.5667 10.0498 18.5667 9.49984 17.8334L8.24984 16.1667C8.1165 15.9834 7.80817 15.8334 7.58317 15.8334Z" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M6.3335 6.66675H14.6668" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M6.3335 10.8333H11.3335" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<span>Send message</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 		
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

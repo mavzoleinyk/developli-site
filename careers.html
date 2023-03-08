@@ -24,18 +24,69 @@
 					<img src="img/logo.svg" alt="">
 				</a>
 				<div class="header__block flex">
-					<ul class="header__menu flex">
-						<li>
-							<a href="#">Employers</a>
+					<ul class="menu flex">
+						<li class="menu__item has-child">
+							<a href="#" class="menu__link">Employers</a>
+							<ul class="submenu">
+								<li>
+									<a href="#">For Students</a>
+								</li>
+								<li>
+									<a href="#">Careers</a>
+								</li>
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Brand Ambassadors</a>
+								</li>
+								<li>
+									<a href="#">Resources</a>
+								</li>
+							</ul>
 						</li>
-						<li>
-							<a href="#">Candidates</a>
+						<li class="menu__item has-child">
+							<a href="#" class="menu__link">Candidates</a>
+							<ul class="submenu">
+								<li>
+									<a href="#">For Students</a>
+								</li>
+								<li>
+									<a href="#">Careers</a>
+								</li>
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Brand Ambassadors</a>
+								</li>
+								<li>
+									<a href="#">Resources</a>
+								</li>
+							</ul>
 						</li>
-						<li>
-							<a href="#">Company</a>
+						<li class="menu__item has-child">
+							<a href="#" class="menu__link">Company</a>
+							<ul class="submenu">
+								<li>
+									<a href="#">For Students</a>
+								</li>
+								<li>
+									<a href="#">Careers</a>
+								</li>
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Brand Ambassadors</a>
+								</li>
+								<li>
+									<a href="#">Resources</a>
+								</li>
+							</ul>
 						</li>
-						<li>
-							<a href="#">Blog</a>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Blog</a>
 						</li>
 					</ul>
 					<a href="#" class="header__login">
@@ -227,9 +278,9 @@
 				</div>
 				<div class="vacancies">
 					<div class="vacancy flex">
-						<div class="vacancy__title">
+						<a href="#modal-vacancy" class="vacancy__title modal-link">
 							Product Designer - Racuten Analytics
-						</div>
+						</a>
 						<div class="vacancy__company">Racuten</div>
 						<div class="vacancy__location">
 							California, USA
@@ -249,14 +300,14 @@
 							</svg>
 							<span>Apply Now</span>
 						</a>
-						<a href="#modal-vacancy" class="btn btn_grey modal-link">
+						<a href="#" class="btn btn_grey">
 							Detail Information
 						</a>
 					</div>
 					<div class="vacancy flex">
-						<div class="vacancy__title">
+						<a href="#modal-vacancy" class="vacancy__title modal-link">
 							Product Designer - Racuten Analytics
-						</div>
+						</a>
 						<div class="vacancy__company">Racuten</div>
 						<div class="vacancy__location">
 							California, USA
@@ -276,14 +327,14 @@
 							</svg>
 							<span>Apply Now</span>
 						</a>
-						<a href="#modal-vacancy" class="btn btn_grey modal-link">
+						<a href="#" class="btn btn_grey">
 							Detail Information
 						</a>
 					</div>
 					<div class="vacancy flex">
-						<div class="vacancy__title">
+						<a href="#modal-vacancy" class="vacancy__title modal-link">
 							Product Designer - Racuten Analytics
-						</div>
+						</a>
 						<div class="vacancy__company">Racuten</div>
 						<div class="vacancy__location">
 							California, USA
@@ -303,7 +354,7 @@
 							</svg>
 							<span>Apply Now</span>
 						</a>
-						<a href="#modal-vacancy" class="btn btn_grey modal-link">
+						<a href="#" class="btn btn_grey">
 							Detail Information
 						</a>
 					</div>
@@ -493,6 +544,128 @@
 		</div>
 	</footer>
 
+	<div class="modal-wrapper" id="modal-vacancy">
+		<div class="modal__block flex">
+			<div class="modal__blackout"></div>
+			<div class="modal modal_vacancy flex">
+				<div class="modal__top flex">
+					<div class="modal__top-title">
+						Job Details
+					</div>
+					<div class="modal__close"></div>
+				</div>
+				<div class="vacancy__icon flex">
+					<img src="img/vacancy-1.svg" alt="">
+				</div>
+				<div class="vacancy__title">
+					Product Designer - Racuten Analytics <span>New</span>
+				</div>
+				<a href="#modal-login" class="vacancy__company modal-link">Racuten</a>
+				<div class="vacancy__location">
+					California, USA
+				</div>
+				<div class="vacancy__time">
+					Posted 16 hours ago
+				</div>
+				<div class="vacancy__info flex">
+					<div class="vacancy__info-item">
+						<div class="vacancy__info-title">Experience</div>
+						<div class="vacancy__info-value flex">
+							<img src="img/user-icon.svg" alt="">
+							<span>2 Years</span>
+						</div>
+					</div>
+					<div class="vacancy__info-item">
+						<div class="vacancy__info-title">Work Level</div>
+						<div class="vacancy__info-value flex">
+							<img src="img/level-icon.svg" alt="">
+							<span>Senior Level</span>
+						</div>
+					</div>
+					<div class="vacancy__info-item">
+						<div class="vacancy__info-title">Employee Type</div>
+						<div class="vacancy__info-value flex">
+							<img src="img/bag-icon.svg" alt="">
+							<span>Fulltime Job</span>
+						</div>
+					</div>
+					<div class="vacancy__info-item">
+						<div class="vacancy__info-title">Offer Salary</div>
+						<div class="vacancy__info-value flex">
+							<img src="img/money-icon.svg" alt="">
+							<span>$25,000<small>/Month</small></span>
+						</div>
+					</div>
+				</div>
+				<div class="vacancy__block">
+					<div class="vacancy__block-title">
+						Job Description
+					</div>
+					<p>
+						Frogwares is currently looking for a Narrative Designer to join the dynamic team of game designers for its upcoming titles. Our expert team creates games which are highly praised by millions of players, as well as industry experts all over the world.
+					</p>
+				</div>
+				<div class="vacancy__block">
+					<div class="vacancy__block-title">
+						Requirements
+					</div>
+					<ul>
+						<li>
+							At least 3 years of experience on a similar position;
+						</li>
+						<li>
+							English – Upper intermediate (B2) or higher;
+						</li>
+						<li>
+							Strong dramatic writing skills in English;
+						</li>
+						<li>
+							Deep understanding of story structure, non-linear narrative methods;
+						</li>
+						<li>
+							Passion for video games of various genres, especially for the open-world genre;
+						</li>
+					</ul>
+				</div>
+				<div class="modal__bottom flex">
+					<div class="vacancy__res">
+						Are you interested in this Job?
+					</div>
+					<div class="modal__btns flex">
+						<a href="#" class="btn btn_green flex">
+							<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 5.83341V14.1667C18 16.6667 16.75 18.3334 13.8333 18.3334H7.16667C4.25 18.3334 3 16.6667 3 14.1667V5.83341C3 3.33341 4.25 1.66675 7.16667 1.66675H13.8333C16.75 1.66675 18 3.33341 18 5.83341Z" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M12.583 3.75V5.41667C12.583 6.33333 13.333 7.08333 14.2497 7.08333H15.9163" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M7.16699 10.8333H10.5003" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M7.16699 14.1667H13.8337" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<span>Apply Now</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-wrapper" id="modal-login">
+		<div class="modal__block flex">
+			<div class="modal__blackout"></div>
+			<div class="modal modal_login flex">
+				<div class="modal__close"></div>
+				<div class="modal__title">
+					Login to Dashboard
+				</div>
+				<p class="modal__description">
+					Login to the dashboard first before applying for a job. If you don't have an account you can create one here. <a href="#">Create Account</a>
+				</p>
+				<div class="modal__btns flex">
+					<a href="#" class="btn btn_grey">Cancel</a>
+					<a href="#" class="btn btn_green">Login</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 
 	
@@ -501,52 +674,5 @@
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.9/dist/fancybox.umd.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		$(function() {
-
-			const partnersThumbnails = new Swiper('.partners__thumbnails', {
-			  slidesPerView: 'auto',
-			  spaceBetween: 40,
-			  navigation: {
-			    nextEl: '.partners__arrows .arrow_next',
-			    prevEl: '.partners__arrows .arrow_prev',
-			  },
-			  breakpoints: {
-			    576: {
-			      slidesPerView: 4,
-			    },
-			    // when window width is >= 640px
-			    768: {
-			      slidesPerView: 6,
-			    }
-			  }
-			});
-
-			const partnersSlider = new Swiper('.partners__slider', {
-			  slidesPerView: 1,
-			  spaceBetween: 20,
-			  navigation: {
-			    nextEl: '.partners__arrows .arrow_next',
-			    prevEl: '.partners__arrows .arrow_prev',
-			  },
-			  thumbs: {
-			    swiper: partnersThumbnails
-			  },
-			  breakpoints: {
-			    576: {
-			      slidesPerView: 2,
-			    },
-			    992: {
-			      slidesPerView: 3,
-			    }
-			  }
-			});
-
-			
-
-			
-			
-		})
-	</script>
 </body>
 </html>
