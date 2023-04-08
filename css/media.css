@@ -22,6 +22,7 @@
 
   .header__login {
     margin-right: 24px;
+    margin-left: 24px;
   }
 
   .menu__item {
@@ -126,6 +127,10 @@
 
   .start__content {
     padding-left: 50px;
+  }
+
+  .rtl .start__content {
+    padding-right: 50px;
   }
 
   .start__content_blue img {
@@ -310,6 +315,22 @@
 
   .error__title:before {
     right: -142px;
+  }
+
+  .rtl .description__content {
+    padding: 35px 35px 35px 0px;
+  }
+  .rtl .about__text {
+    margin-left: 0;
+  }
+  .rtl .about__title {
+    margin-right: 0;
+  }
+  .rtl .search__btn {
+    margin-right: 20px;
+  }
+  .rtl .page__info {
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 993px) {
@@ -835,6 +856,38 @@
 
   .contacts__map {
     margin-top: 60px;
+  }
+
+  .rtl .has-child .menu__link {
+    padding-left: 40px;
+    padding-right: 18px;
+  }
+  .rtl .has-child .menu__link:after {
+    top: 19px;
+    left: 20px;
+  }
+  .rtl .has-child .menu__link.active {
+    background: #47D18C;
+    color: #fff;
+  }
+  .rtl .has-child .menu__link.active:after {
+    top: 21px;
+    border-color: #fff;
+  }
+  .rtl .start__content {
+    padding-top: 85px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .rtl .start__content_blue img {
+    margin-left: 0;
+  }
+  .rtl .footer__info {
+    margin-right: 0;
+  }
+  .rtl .card_2 .card__date, .rtl .card_2 .card__tag {
+    margin-right: 0;
+    margin-left: 18px;
   }
 }
 @media screen and (min-width: 769px) {
@@ -1418,6 +1471,31 @@
   .user__name {
     margin-bottom: 8px;
   }
+
+  .rtl .description__content {
+    padding: 35px;
+  }
+  .rtl .footer__links li {
+    padding-right: 0;
+    padding-left: 24px;
+  }
+  .rtl .footer__socials li {
+    padding-right: 0;
+    padding-left: 24px;
+  }
+  .rtl .card__tag, .rtl .card__date {
+    margin-left: 12px;
+  }
+  .rtl .card_5 .card__info {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  .rtl .search__btn {
+    margin-right: 0;
+  }
+  .rtl .vacancies-section__content .search__btn {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .container {
@@ -1771,7 +1849,7 @@
 .vacancy__time,
 .user__position {
     margin-right: 16px;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
   }
 
   .candidate__name,
@@ -2214,10 +2292,6 @@
     padding-bottom: 80px;
   }
 
-  .pb-big .card {
-    margin-bottom: 30px;
-  }
-
   .filter {
     padding: 15px;
     border-radius: 15px;
@@ -2258,5 +2332,45 @@
 
   .doc {
     padding-right: 12px;
+  }
+
+  .rtl .description__content {
+    padding: 30px 15px;
+  }
+  .rtl .start__content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
+  .rtl .search__btn {
+    margin-right: 0;
+  }
+  .rtl .filter .btn {
+    margin-left: 0;
+  }
+  .rtl .candidate .btn {
+    margin-left: 0;
+  }
+  .rtl .user__info {
+    padding-left: 0;
+    padding-right: 12px;
+  }
+  .rtl .vacancies-section__content .search__area {
+    margin-left: 0;
+  }
+  .rtl .vacancies-section__content .search__area, .rtl .vacancies-section__content .search__country {
+    background-position: right 3px center;
+  }
+  .rtl .search__country select {
+    border: none;
+  }
+  .rtl .vacancy .btn, .rtl .candidate .btn {
+    margin-left: 0;
+  }
+  .rtl .vacancy__res {
+    padding-left: 0;
+  }
+  .rtl .main__btns .btn {
+    margin-left: 0;
   }
 }

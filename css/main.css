@@ -231,6 +231,7 @@ header {
   color: #3D425A;
   font-weight: 600;
   margin-right: 80px;
+  margin-left: 80px;
 }
 .header__login svg {
   display: inline;
@@ -268,9 +269,6 @@ header {
   line-height: 14px;
   margin-right: 8px;
   padding: 12px 18px;
-}
-.btn:last-child {
-  margin-right: 0;
 }
 .btn.btn_1 {
   color: #7F879E;
@@ -1293,9 +1291,7 @@ footer {
   margin-bottom: 0;
 }
 .checkbox input {
-  position: absolute;
-  top: 50%;
-  left: -100000px;
+  display: none;
 }
 .checkbox label {
   position: relative;
@@ -1623,7 +1619,7 @@ a.candidate__title:hover {
   background: url(../img/location-icon-grey.svg) left center no-repeat;
   background-size: 20px 20px;
   margin-right: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   color: #7F879E;
   font-size: 14px;
   padding-top: 1px;
@@ -1747,6 +1743,7 @@ a.candidate__title:hover {
 }
 .pagination li a.pagination__arrow svg {
   stroke: #7F879E;
+  margin: 0;
 }
 .pagination li a.pagination__arrow:hover {
   stroke: #47D18C;
@@ -2821,9 +2818,7 @@ a.candidate__title:hover {
   position: relative;
 }
 .form__privacy input {
-  position: absolute;
-  top: 50%;
-  left: -100000px;
+  display: none;
 }
 .form__privacy label {
   position: relative;
@@ -3206,4 +3201,285 @@ a.candidate__title:hover {
 
 .doc__icon-2 {
   width: 24px;
+}
+
+.rtl .has-child .menu__link {
+  padding-right: 0;
+  padding-left: 18px;
+}
+.rtl .has-child .menu__link:after {
+  right: auto;
+  left: 0;
+}
+.rtl .description__content {
+  padding: 70px 50px 100px 0px;
+}
+.rtl .description__img {
+  margin-left: -135px;
+  margin-right: 0;
+}
+.rtl .arrows {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.rtl .start__content {
+  padding: 20px 100px 0px 0px;
+}
+.rtl .start__content_blue img {
+  margin-right: 0;
+  margin-left: 120px;
+}
+.rtl .btn {
+  margin-left: 14px;
+  margin-right: 0;
+}
+.rtl .btn:last-child {
+  margin-left: 0;
+}
+.rtl .btn svg {
+  margin-right: 10px;
+  margin-left: 0;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.rtl .btn svg:nth-child(1) {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.rtl .btn.btn_small {
+  margin-right: 0px;
+  margin-left: 8px;
+}
+.rtl .footer__info {
+  margin-right: 0;
+}
+.rtl .about__text {
+  margin-right: auto;
+  margin-left: 100px;
+}
+.rtl .about__title {
+  margin-left: 0;
+  margin-right: 100px;
+}
+.rtl .about__title h2:after {
+  right: auto;
+  left: -35px;
+}
+.rtl .breadcrumbs ul li:after {
+  right: auto;
+  left: -2px;
+}
+.rtl .blog__top .btn {
+  margin-left: 0;
+}
+.rtl .card__tag,
+.rtl .card__date {
+  margin-right: 0;
+  margin-left: 24px;
+}
+.rtl .blog__title {
+  margin-right: 0;
+  margin-left: 24px;
+}
+.rtl .search__btn {
+  margin-left: 0;
+  margin-right: 42px;
+}
+.rtl .search__input {
+  background-position: right 18px center;
+  padding-right: 54px;
+  padding-left: 15px;
+}
+.rtl .card_2 .card__info {
+  padding-left: 0;
+  padding-right: 24px;
+}
+.rtl .card_5 .card__info {
+  padding-right: 28px;
+  padding-left: 115px;
+}
+.rtl .search__country, .rtl .search__area {
+  background-position: right 16px center;
+}
+.rtl .search__country select, .rtl .search__area select {
+  padding-right: 52px;
+  padding-left: 18px;
+  background-position: left center;
+}
+.rtl .sort {
+  margin-right: auto;
+  margin-left: 0;
+}
+.rtl .sort__title {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.rtl .filter__tag {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.rtl .candidate__avatar {
+  margin-right: 0;
+  margin-left: auto;
+}
+.rtl .vacancy__btn, .rtl .candidate__btn {
+  margin-left: 0;
+  margin-right: 16px;
+}
+.rtl .candidate__name {
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 16px;
+  margin-right: 0;
+}
+.rtl .vacancy__location, .rtl .candidate__location, .rtl .user__location {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.rtl .vacancy__tags span, .rtl .candidate__tags span {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.rtl .candidate .btn:last-child {
+  margin-left: 0;
+}
+.rtl .vacancy__menu, .rtl .candidate__menu {
+  right: auto;
+  left: 0;
+}
+.rtl .pagination__arrow svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.rtl .doc {
+  padding: 12px 12px 12px 24px;
+}
+.rtl .job__info, .rtl .education__info {
+  padding-left: 0;
+  padding-right: 12px;
+}
+.rtl .user__info {
+  margin-right: 0;
+  margin-left: auto;
+}
+.rtl .vacancy__time, .rtl .user__position {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.rtl .offer__title:after {
+  right: auto;
+  left: -35px;
+}
+.rtl .vacancies-section__content .search__area {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.rtl .search__country select {
+  border-right: 1.5px solid #F3F3F3;
+  border-left: none;
+}
+.rtl .vacancies-section__content .search__btn {
+  margin-right: 20px;
+}
+.rtl .vacancy__salary, .rtl .candidate__salary {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.rtl .vacancy__company {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.rtl .vacancy__icon {
+  margin-right: 0;
+  margin-left: auto;
+}
+.rtl .vacancy__info-item:after {
+  right: auto;
+  left: -1px;
+}
+.rtl .vacancy__res {
+  margin-right: 0;
+  margin-left: auto;
+  padding-left: 24px;
+  padding-right: 0;
+}
+.rtl .modal__btns {
+  margin-left: 0;
+  margin-right: auto;
+}
+.rtl .modal__btns .btn {
+  margin-left: 0;
+  margin-right: 14px;
+}
+.rtl .form__privacy label {
+  padding-left: 0;
+  padding-right: 32px;
+}
+.rtl .form__privacy label:before {
+  left: auto;
+  right: 1px;
+}
+.rtl .form__item select {
+  padding-left: 48px;
+  padding-right: 16px;
+  background-position: left 20px center;
+}
+.rtl .page__info {
+  margin-right: 0;
+  margin-left: 170px;
+}
+.rtl .article__content h3 {
+  padding-left: 0;
+  padding-right: 24px;
+}
+.rtl .article__content h3:before {
+  left: auto;
+  right: 0;
+}
+.rtl .checkbox label {
+  padding-left: 0;
+  padding-right: 36px;
+}
+.rtl .checkbox label span {
+  padding-right: 0;
+  padding-left: 24px;
+}
+.rtl .checkbox label:before {
+  left: auto;
+  right: 2px;
+}
+.rtl .filter__item-title {
+  padding-right: 0;
+}
+.rtl .filter__item-title:after {
+  position: relative;
+  display: inline-block;
+  margin-top: 0;
+  top: 3px;
+}
+.rtl .page__info ul li {
+  padding-left: 0;
+  padding-right: 16px;
+}
+.rtl .page__info ul li:before {
+  left: auto;
+  right: 0;
+}
+.rtl .vacancy__block ul li,
+.rtl .candidate__block ul li {
+  padding-left: 0;
+  padding-right: 24px;
+}
+.rtl .vacancy__block ul li:before,
+.rtl .candidate__block ul li:before {
+  left: auto;
+  right: 0;
+}
+.rtl .user__btn span {
+  padding-left: 0;
+  padding-right: 4px;
 }
